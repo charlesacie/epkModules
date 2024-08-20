@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+#background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    background-image: url('IMG_5218.JPG');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.3; 
+}
+
+#content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 40px;
+    border: 2px solid red;
+    padding: 20px;
+}
+
+h2 {
+    color: white;
+    border-bottom: 2px solid red;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.photos img, .album-art img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    border: 2px solid red;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background-color: black;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid red;
+}
+
+a:hover {
+    color: red;
+}
+.carousel {
+    position: relative;
+    max-width: 400px;
+    margin: 50px auto;
+    border: 2px solid red;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item video {
+    width: 100%;
+    display: block;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+.merch-item {
+    border: 2px solid red;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.merch-item h3 {
+    margin-bottom: 10px;
+}
+
+.merch-item p {
+    margin-bottom: 10px;
+}
+
+.buy-now-button {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.buy-now-button:hover {
+    background-color: darkred;
+}
