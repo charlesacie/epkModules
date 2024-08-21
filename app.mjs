@@ -1,4 +1,13 @@
-    document.addEventListener('DOMContentLoaded', () => {
+import { setupInquiryForm } from './inquire.mjs';
+
+document.addEventListener('DOMContentLoaded', () => {
+   
+    setupInquiryForm();
+
+    initCarousel();
+});
+
+function initCarousel() {
     console.log('EPK Page Loaded');
     let currentSlide = 0;
     const slides = document.querySelectorAll('.carousel-item');
@@ -31,10 +40,8 @@
         showSlide(currentSlide - 1);
     }
 
-   
     showSlide(0);
 
-   
     document.querySelector('.carousel-control-next').addEventListener('click', nextSlide);
     document.querySelector('.carousel-control-prev').addEventListener('click', prevSlide);
-});
+}

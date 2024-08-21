@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Electronic Press Kit</title>
     <link rel="stylesheet" href="style.css">
-    <script type="module" src="app.mjs"></script>
+    <script type="module" defer src="app.mjs"></script>
 </head>
 <body>
     
@@ -21,9 +21,10 @@
         <section id="promo-photos" class="section">
             <h2>Promo Photos</h2>
             <div class="photos">
-                <img src="IMG_5221.jpg" alt="Acie" height="300px" width="150px"> 
-                <img src="Facetune_19-08-2024-12-16-45.jpg" alt="The Lab" height="300px" width="150px">
-                <img src="scubbyTpa.jpg" alt="scubbyTpa" height="300px" width="150px">
+                <img src="IMG_5221.jpg" alt="Acie"> 
+                <img src="Screenshot 2024-08-20 134647.png" alt="Billboard">
+                <img src="Facetune_19-08-2024-12-16-45.jpg" alt="The Lab">
+                
             </div>
         </section>
         
@@ -64,30 +65,29 @@
                 
             </div>
         </section>
+
+        <section id="Achievemrnts" class="section">
+            <h2>Achievements</h2>
+
+            <div class="album-art">
+               <img src="Screenshot 2024-08-20 134647.png" alt="Billboard">
+                
+            </div>
+        </section>
         
         <section id="music-video" class="section">
             <h2>Music Video</h2>
             <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/y8Gf4-eT3w0?si=Qio26hO1JmvVmrXl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/KeBxopnhizw?si=-S__JiddYJCutBsv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-        </section>
-        
-        <section id="streaming-links" class="section">
-            <h2>Streaming Links</h2>
-            <ul>
-                <li><a href="#" target="_blank">Spotify</a></li>
-                <li><a href="#" target="_blank">Apple Music</a></li>
-                <li><a href="#" target="_blank">Tidal</a></li>
-                
-            </ul>
         </section>
         
         <section id="social-media" class="section">
             <h2>Social Media</h2>
             <ul>
-                <li><a href="#" target="_blank">Instagram</a></li>
-                <li><a href="#" target="_blank">Twitter</a></li>
-                <li><a href="#" target="_blank">Facebook</a></li>
+                <li><a href="https://www.tiktok.com/@aciebabyy" target="tikTok">TikTok</a></li>
+                <li><a href="https://x.com/i/flow/login?redirect_after_login=%2Faciebabyy" target="Twitter">Twitter</a></li>
+                <li><a href="https://www.instagram.com/aciebabyy/?img_index=1" target="Instagram">Instagram</a></li>
                 
             </ul>
         </section>
@@ -96,6 +96,26 @@
             <h2>Contact Info</h2>
             <p>Email: <a href="aciemusicpromotion@gmail.com">aciemusicpromotion@gmail.com</a></p>
             <p>Phone: (***) ***-****</p>
+        </section>
+
+        <section id="inquiry-form-section" class="section">
+            <h2>Inquire About Acie Babyy</h2>
+            <form id="inquiry-form">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    
+                    <label for="phone">Business Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </fieldset>
+                
+                <button type="submit">Submit Inquiry</button>
+            </form>
         </section>
     </div>
 </body>
